@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Cerashome</title>
+  <link rel="icon"
+    href="https://images.squarespace-cdn.com/content/v1/622120ca5bf5c6740abc47e2/d2d38fa5-9c0c-4afa-8584-9f9ab76a2f36/logo.png">
+  <style>
+    .aa {
+      color: rgb(243, 143, 76);
+    }
+
+    .text {
+      color: rgb(102, 30, 30);
+    }
+
+    .text-a:hover {
+      text-decoration: underline;
+      color: peachpuff;
+    }
+
+    .aa:hover {
+      color: peachpuff;
+    }
+
+    .cl {
+      color: rgb(102, 30, 30);
+      background-color: peachpuff;
+    }
+
+    .tx {
+      color: rgb(243, 143, 76);
+    }
+
+    .tx:hover {
+      color: rgb(102, 30, 30);
+    }
+
+    .border-ab {
+      border-color: peachpuff;
+      border-radius: 8px;
+      background-color: rgb(102, 30, 30);
+      color: peachpuff;
+      font-weight: bold;
+      border-width: 2px;
+    }
+
+    .btn-1:hover {
+      border-color: rgb(102, 30, 30);
+      background-color: peachpuff;
+      color: rgb(102, 30, 30);
+      font-weight: bold;
+      border-width: 2px;
+
+    }
+
+    .footer-bottom {
+      background-color: rgb(66, 64, 64);
+      padding: 10px;
+      text-align: center;
+      color: white;
+      margin: auto;
+    }
+
+    .bg {
+      background-color: peachpuff;
+    }
+
+    .hvr:hover {
+      color: peachpuff;
+    }
+
+    /* FOOTER SUB HEADINGS */
+    .text-ab {
+      color: rgb(102, 30, 30);
+
+      margin-right: 50px;
+    }
+
+    .text-abc {
+      color: rgb(102, 30, 30);
+
+    }
+
+    .txt1:hover {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .text-b:hover {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .text-ab {
+      color: rgb(102, 30, 30);
+
+      margin-right: 50px;
+    }
+
+    .text-b:hover {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+
+    }
+
+    .ab:hover {
+      color: rgb(102, 30, 30);
+    }
+
+    /* FOOTER MAIN HEADING */
+    .text-abc {
+      color: rgb(102, 30, 30);
+
+    }
+
+    .txt1:hover {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .txt1:hover {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* NAVBAR HEADING */
+    .text {
+      color: rgb(102, 30, 30);
+    }
+
+    .text-a:hover {
+      text-decoration: underline;
+      color: peachpuff;
+    }
+
+    /* BUTTON */
+    .text-ba {
+      color: peachpuff;
+    }
+
+    .border-ab {
+      border-color: peachpuff;
+      border-radius: 8px;
+      background-color: rgb(102, 30, 30);
+      color: peachpuff;
+      font-weight: bold;
+      border-width: 2px;
+    }
+
+    .btn-1:hover {
+      border-color: rgb(102, 30, 30);
+      background-color: peachpuff;
+      color: rgb(102, 30, 30);
+      font-weight: bold;
+      border-width: 2px;
+
+    }
+
+    .w {
+      height: 50px;
+    }
+
+    .nn {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md">
+    <div class="container">
+      <a href="index.html">
+        <img
+          src="https://images.squarespace-cdn.com/content/v1/622120ca5bf5c6740abc47e2/d2d38fa5-9c0c-4afa-8584-9f9ab76a2f36/logo.png"
+          class="img-fluid w" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navcollapse">
+        <ul class="navbar-nav mx-md-auto ">
+          <li class="nav-item ms-4">
+            <a href="index.html" class="nav-link fw-bold text-a text">HOME</a>
+          </li>
+
+          <li class="nav-item dropdown ms-4">
+            <a href="#" class="nav-link dropdown-toggle fw-bold text-a text" data-bs-toggle="dropdown">E-CATALOGUE</a>
+            <ul class="dropdown-menu">
+
+
+              <li><a href="glzd.html" class="dropdown-item fw-bold aa">GLAZED VIRTIFIED TILES</a></li>
+              <li><a href="crmc.html" class="dropdown-item fw-bold aa">CEREMICS TILES</a></li>
+              <li><a href="plsh.html" class="dropdown-item fw-bold aa">POLISED VIRTIFIED TILES</a></li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-4">
+            <a href="#" class="nav-link dropdown-toggle fw-bold text-a text" data-bs-toggle="dropdown">
+              CATEGORIES</a>
+            <ul class="dropdown-menu ">
+              <li><a href="wall.html" class="dropdown-item fw-bold aa">WALL TILES</a>
+              </li>
+              <li><a href="flr.html" class="dropdown-item fw-bold aa">FLOOR TILES </a>
+              </li>
+              <li><a href="spcl.html" class="dropdown-item fw-bold aa">SPECIAL TILES</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-4">
+            <a href="#" class="nav-link dropdown-toggle fw-bold text-a text" data-bs-toggle="dropdown">EXPERT
+              CORNER</a>
+            <ul class="dropdown-menu ">
+              <li><a href="cal.html" class="dropdown-item fw-bold aa">TILE CALCULATOR</a></li>
+              <li><a href="diff.html" class="dropdown-item fw-bold aa">BLOG</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item ms-4">
+            <a href="contact.html" class="nav-link fw-bold text-a text">CONTACT US</a>
+          </li>
+        </ul>
+        <div class="d-flex ms-4">
+          <a href="diff.html" class="active ms-4 ms-md-0 text text-a">
+            <i class="fa-solid fa-pen-to-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="fw-bold cl">LIVING ROOM WALL TILES</h1>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center text-align-center">
+        <div class="mt-4">
+          <p class="fw-bold tx">CERA'S HOME brings an incredible selection of stylish and elegant looking living room
+            wall
+            tiles that gives a classy makeover to your dull room. Explore an array of tiles for the living room, where
+            style and
+            functionality
+            blend perfectly to create an extraordinary ambience. The living room is the beating heart of the
+            home, providing a versatile and multi-functional space that warmly embraces relaxation,
+            entertainment and productivity. Bring your lounge to life with our selection of Living Room Wall
+            Tiles.
+          </p>
+
+          <button class="btn btn-sm btn-ab btn-1 border-ab">View products</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mt-3">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUXFhcVGBUXGBUXFRUWGBgXFhYVFRUYHSggGBolHRcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0dHSYtKystLS0tLS0tLS0tLy0tNy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0tKy0rLy4tLv/AABEIAKsBJgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAEEQAAEDAQMIBggEBgIDAQAAAAEAAhEDBCExBRIiQVFhcbEycoGRocEGEyMzQtHh8FJigrIUQ3OSosIVU7PS8eL/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQMCBAUG/8QALBEAAgIBAwAIBgMAAAAAAAAAAAECEQMSITEEEyIyQVFhkRRScbHw8SMz0f/aAAwDAQACEQMRAD8AZUARrnx5o0N1xB1m8HbgbvC5CUa8XOacdo5Yo5z2uMgkGIvBi7eFwyOmJcxrheHDDC8EYjFuIu2a1e2qREt26QDT2HXrKFDnAAgZwO8b7rzO1WMNxkOkG7ET3hRaKphH8SIgwB2jxNykKgAkExMXEG/iIVDX3QARr+4VmYYkwR+Yye6FmjVk5kGQJ269eJu3LzSL7pGGJMdt8KssESBfOAM3RsaeGpSzhGBHEEcwigsEtNOL5IQzjcLgeMDhsRtamCNYvS+pTIiAD4Lqx8HPPk9WbPSaRcL9QhUmJALg4XdKZAO/6otpedThdF147lW9skzB4iDhderIkD0qcSQMRFzsNcrrWGBeDxEHf9ypClF+aQYOG8QuhpEAu/uCACKbIgkGNcXhWUxOyO5QYIg4mL4N3cjKDJEnuM79inNm4rcJs9mn7lFiwXfJVUSAbh3HdsRdKsQMe8Lkk2dSSFVqsuadqX2inN+vvWmtBDgbln7W3NK3jluYnHYUPAnZ2xzQTm+1p/q1D8J1hNbSybxdduKVU49czg6e5XsiH0vj6r/GoURTOmeI/ahqeDz+U/vcrqZ9oeP+pTQMos5l47ebFWAS4f1Xj/EonJNAkknVP+vyTOnYgAT+Yu77laMCUpFQssxwCubZJOf+EHzTClSvHA8lFnunHcfJWSJtnbDSBVdhvqHrnmUVkzBB5MOmeseZTEMo0u1Lvjd1ncymY6Xalnxu6zuZTEFWzpN4eaqb7+p1f9WK61dNvAcyqme/qdX/AFYgDO2nCp12+SNq/DxQVp+P+o3yRtTFvFCBjmyDkuKVk8l5MDM0iRAzxGN5cPCCFe6k2SQ0AE6o/wBTIVNCm0kCMdYm7uVjCBrcOMeYC85nYi1zHAXFwA1H5uC6XG6/b2RGN/yVbzfIcBq0mHZGIcpuD7pFN0b3fL7uWGjaZcS+MSL5kEzyXm1SdbnRrkCNmJBVbQI6McC3dvv4wrgTqG7es0Ozoqbz2D91xXTW1C/u8oUKjoAJnXcYHleqjVdFwTSBstqYaV/j4Qg6r46JB8Fa5xIv5mVVWaDq8b9f0VYolJkM8zeImL+7DcrGu7thHyCqIM/EMPuIXW73DXiDP32qlkyZEiI2Ydq8LrtLgRK8W7weBVrLoucPvYmB2k0SYzYMjYYKIa3NGN2oROHbvVFKoBsw2XbNSmXxh/8AFOW5SIQyqNRE7CI+StpOi8Ex3+KDLyb74Hhq1rrHi67mFBxKqQzp1pwAj74bEHlBo38wpsqzvHYVG14dG6NeKwlTNt2hJXYJvjx7kDSZ7VuzNdfjs1pjXx+qDs49tjOgdWGk1WZAsA0KnD/Z6toe9d96ion3b+Pm5Soe9d1fJUj4CkHZMboO4nmU1eNA8BzSzJ3QPEfNNKo9m7gOa648HNLkts4vHBD/AMh3ZzaibPiEK73DuLf3NWjIRkzBAZLN46yOybh2Jfko9HigY6HS7SlY6Z6zuZTVovPEpUzpnrO5lMQXaem3qjmVUz37+qf2sVtcTUHVHMqum32zt4dyYgDO2j4/6gRhxbxQlpHS/qI4i9vW+aEDHFlHJeU7Hj2LyAMdTNMwNfWHyROdmE6TonEAkXHiqWvvuc4HeB81cHvBh2a6dzTM8Vw0daZY6q0kw6NxDgMNwVhqRqDscD842qp4E6LRffcRcYvETxUi4XTnDsd450pUOy01Lpk8JkjuJUWvJwM93yUSBiJd3eTVB9bCNE7yDPZA2LNDsu09ZHcb+2VVabcxmbn1GskmM6BO4TivOe5wvOcJ7D2XrJ+mdOWMGZN7rgDdcNK7Zj2JLmgfBrKdpY7B9N3AjyKlUgahHEkr55ZLCzMa11KsXkkZzHNzM4jRAaWzeN+K5lWjVo5j257WPGaAC5uY/ZcTJjaeOxUjvwTcrPoOaCdYM4rwaIx8J7da+aWS224PzPW1c7Pa3NnOMGZiTBwxwWjteVKjXFrKtTRaXOFUUKuEwGuphsiQVQynZp80jUMbyPDGFYBhj2H6LJWT0irlhcQxwzSQGtMucPhjOECbs6EbSy9UzWufQY3OEj2mI1/Ceaw5xA0JefxEDeBHmuAnXmnhd4XLPWf0ubUqeq9TVzjNwzCNuJIEI4ekFIDSlkQZc04HC8SIOPjrT02aTGBoGSQSJk7eV6spCPiv3hVWTKFOrJYWkiJ6QvO0GIRDXnZA/KfqVhxNJl4j8pO+RyXapJm4d8juVII/+xzUqjsQXeB8gpuO5tS2AbQd0ffBAWY+2OzMx/U1MLR5bQJSyz+9OPQ1x+IJsyGD3Tus7mV6kfau6h8lFh9kes7mVJnvv0HmFSHKMyGlhGiRvH7QmlX3buHmEssnxdb/AFCZ1fdn71hdkeDmfJbZcUI/3DuLf3NRdjxQtT3DuLeYTEXZP6PYl2TMG9iYWXoO6p5FAZPwb2IGPGYnilFM6Z655lOGC88Unp9M9c8ygA1x9r+kKNM+1PB/Nq7/ADjwC5RPtOyp+4IAz1rHS/qeaNOLesfNB23F3XPNF629Y+aaEx3Y/JdXrFN8bAvIGZRlInENNxi9o1XYLrnud8I8dS7TeDgNROInleqxUbN7eXauOjosvLNrXC7Ud547FBzxHS16yAuueBEyLgYidfHcpvrCLj9wMEqHZUazREg34RBnDgrBUEGJHHjxXA4EAkmJiCCY7F31rIMkbrv/AMrNDsqeTrmPDkk2VagFSkD+ft0RcnlU3XAR2BIrZH8RQLhc31joBiYaN6jlemLfo/sbi0mTo03VA5we6JIzu3GCboXqFjeS83lzoIeM6BIv0gReZAII195goZrBnA0ydcEZzpvJAvANwR9jqGkHZkyJ0gASNdzjdOqNa8mHTot9uX3/AEX0RXNCWx2YtMh0F4de0Zrg6NJl44zCNOT2QTokjBsSDIEyBGJVtsqsADnPLnxJLpGq7S8lyx03jOzmg5zWOnOaZlswBO/jct5elZXHsW63/K8/Uk4Rb2AbVZ5fotgkBpIJMN2DdCGyhYKNTQIgNIB6UxIziBgdqYGqNF2cRpQRcIJOAmZxK4K95DM0kk3Oi4SAS8uIAEQJHNLFnm5p7u/Qv8DOSdIT2bJYF+bADCL/AImXkZwwuuUjZnVGCi3SZmudGY0Q6ZzgReboF5w4wm1ra6m8UntBEB+Gsw4gxiI2Kmx3Zt4E3aURLpIIcdVwxhdD6Y4Oqd+RzywqPjZZ6N5PNEPa64uzHCRqMjyTkNwvHigslmHPvDhDIIcCDiDBGqQUcbz8XPyXpwtxTZFrS6Osm+8fPvXqp3O5hekfYC47v70NDTArQQNR7vql9mPtXdUao1hMq42JdZhpv3BuudqwzSCGH2Xa7mrKXvh1DzCqp+6/U7mVdZx7YdTzVIeBiQ2swx4nkEyq+7PEcwl1m8ymNT3Z6w5hdaOdltixQtb3B6zeaKsOPYhq49j+pvIpiJUvdP6juRQVjwajW+5f1Hcig7MOj2IGPKeJSan0z1z+4p1SGKTM6Z65/cUAGAe2PAcgo2Ye07Kv/kCsYPbO4DkF6yiXjq1P/IgZnbeNJ3WPNFDFvWd/shrf03dZ3NFNxb1neaaEx3Yxj2Li9Y9fYvJAZVtVsXPg9o1blCpUBvDxMCelPHBQbVdho/2hTqG+5jcBtImBOvauUudqOAi6ZEaipesEdG/9O6FWc/8AAO48dqszDmg5t878I4pDJhwx37G+QXnFpBgX4zftXWyQNDulSc10XsOMYnfu3JADlxA29ySW55Fps5vF78CRdo3SntSMM0pBlIj+Js+dMS/kMFz9IX8cvo/sbTNKBmtzntB6TnAvIMki4677+3aqqwosptqCCXdFrWjSJIvdGyf8glrdBpjG4BtwkQcAe3uXMoVAym1pmZa4zqJIJvukiV8v8M758fcq57E60VKRbfdo6pxDQD+G8i/iqBZGFgiNKq6oMJc1jGtaQ6fxRqVDqrnUo1umowCNIy515F4wju2qsONKu1oI0GBrRMxdDjdr0QupQnFNJ/n7JOSvYcVH+uq5jgc1pl0uLgdx/uG8BU0slhrzBbTBaAfaPzby7RvJnATOBCoDjIzb5cRnHpEQC4u3m8Kyyvio45pLnOLgJMEGYu7ZQtUY9l0Vh0icVpTdPlFrM1lSnSqluaA7oktdLZAlxuvjkhbXXDzT9WCJJDg4CReBJI13gdx1phlH0drAOrRTMgktBOcNHYbtSQ2qs5wYTcfWEYnDNmb+M/JPHljlWzT82LLJLZDvI7gM6BAht0Afi1Sja1sY3Nm/Owv2JVkirnl9wbGaAADFwJw7Vdlek3Ma6YIN0Ymbj5FfQ4f64/REORw2pIkbrvooObOA+qqsTmwSCNU3E7SOalVI28Lj8lViKaw+8PNLLP06nBn+yOqkbZQNn6VTDFuE79qm+TaCafum8T+4q+ze+HU81Q33bPvWirKPa/o81WHJiQysrru9Mn+6PWbzS+xMuTCqPZnrhdKIMtsOJ4FDWn3Q67eTkTYdfVKHtQ9k3rt/a9MR2PY1OoeSDoakcR7F/VKEojBAx1SSZvTd13fuKeUUkb03dd37igAxpPrX3ahyCqye8yLvgd4uBV4HtanAcgoZPYJH9Pz+iAM9bOm7rO5oqkDnN4u80Nah7R/WPNGUek3i7zQJjazjG+F1dsuteQMxoY3YSeMKIY3UD3hXBrvxnvK4CR/N3HpLlouWMqNOPiN3FEikYBEEcPqqmszgL8BfjtPzVzWgAaXckM6LxEX7l71ZiYMnedynokRnH77V4tAE5zjj4dqAKHUyRx4pRlXIJqljxUfTcwktc3Nm8D8QK0BqD819+H3tXtGMClSfIGVOQa5xtdYjZm0QPCmvVvR+q7pWmqdd7af/AKLTXG7SHf8AJezL8XauSXU4/lXsjNmab6PVdEfxNXREN0aVwMT8G4KLfRl+dnGvU/tp7I/DuWpAEi46hP0heZtgo6rH8q9kAg/4SpcPXPMT8NPdPwbgunItbODvXvkGRosux1Zu/BaH9LvBdLDPRd4I6nHxpXsgF7qlqIIdXc4EQdCmJ7mpU/Ihu03CMLhddm7Ni02Ydh8FQ+zOPwnvWI9Fww7kIr6Jf4DbfLFNlsvq845ziTBJIGq7Uh7UHh+cbxF04Rs4p1UsLz8H+X0QtssNVzQ0MEE6Wk3C4xetKPgkbtI5YHSNG6LtcX4mdqKqOImJ71bQszgIgD9TfIrrrE84FveFSjLYtrvN+iTd3IGy/H1hy+qYWhubIgXSNeOBS2yG53XP7Wqb5NLgOHQZwCLsg9oep5oWNFnAckdYm6Z6o81WPJiQ0sDcFZa7bSa2HVGA50xInA6sVlMp5Te55pMOa0EjZMXEmLzfqVNOw040s5x4kDuam89bISxXuzV2fLdmbM1RgRg48gqq+XLMWAet+IHov1Bw2b0gbYqMe7He75qJsdH/AK/F3zWeul6GuqiaM5ds3q3N9aJIjov+SrpZUs93tW+I5hZ82Oh+D/J3zUTYqH4SODnfNHXy9A6qJvLNlSgf51P+5o5lAUhLiQQRnG8X61kDYKRwc8doPMLgyfUYc6lUk/2n6rSzPyE8S8zeke0qcByClY2nO4MbzcsvkH0hcahp1+kdHOwIOoO1dq1dnIznX/C3m5WjJSVolKLjyZe1e9f1jzKLs3SHbzQdf3r+seZRdj6X3tWjLHlkwK8o2epAXkwMA+1vHw9sJhZrO1wa4tBJE3kwNt3akNUCdIgdhnjeStHk86DOp8lxQdvc6ZbF7Q4XAAffBdzn7vvsU15UowQGftHcuw/8Q7vqpryAIhrvxeH1Us0/iK6upgVsY4gaZ7grRSP43f4/JRpYDgFaCgR4Ufzu8Pkuil+Z3eugroKAPepG139zvmuii3f/AHO+a9nLucgDoot2eJU20W/hHcoZ6kHpiO0wIwGLtQ/EVMAbAh6b7u13MqzPQBeCpOfchw9SLrkwM3bX6Trj0jr3lLqBuPWPIJhbOk6TrPNLWG49Y8gud8lVwMnfDw8kdYTpO6o8/mgKhvR1i+LeQPAKseTEjO5fp+rrk6s89z9LncjLPUkI/wBJ8nZ9IVR8Oi7cJljuwnxCQZLrHA4i4qE1pkWi7iOQuOC41y6SgClwUJVjyqykM8i7Oh2MlD5UtWa31bTpOEcG6ymthMjYJq15HxPkcBcD3DxX0GgOlwHmsp6KWOJqEbm+ZWro4P7F14I0r8znyvejN1fev4ouwHS+9qCqH2r+si7AbyqomxuxwXlSxy8mI+eVz2dw5LSZN93T6nyWarMv6J8fktNk0ezp9X5Lgx8s658Bi8vLysTPLy4So+sG0JATXQotcCJC4ardo7wgCVM3DgFMFUtdcFLOTEWyu5yFfamDFzRxcB5qp2U6X/YOwzyCAGEr0pPUy1RHxOPAOVBy8wTmtqGdsICh/KkFnDl1xwpd7j5BV/8ALVzg1g7zzKAo0dNwE36zzKkao1X8L1m/4uufjjg0DyUmesdjUee0wgKND64/hOPDtvVn8QNcDiQkbLOZ1niVYaMbAhugSBrZMk43nWNqU0LVTLswvg5xERN+CbvYBr+SyuXaVO59MtzxUkubGdcCb+2FCXJaKNa8tBwJPcp0RUOBa0TxS6yvJZTJMlzQSdpOJTOzOuHCe9UjuYlsHssNZ9F4/iIBa4FuY0g6O1Ymwu03fp5L6HZqkWd52Mee5q+f0oExmmSD0oMQBhG5LOkqHid2OGuuXjUSo2h+ps/qHyVRtrvwHvCjZShu56iHJUbadbXDsn9sqdO3NJ6Q4Tf3FFhQ8p1A1pccACe5KsnNY+oPWva0v0iSYu1NE7BAU7XVmhU6sd9yN9G7DTqes9YxrhDWiRhtg6luK1NIzJ0mzXUaTM7NZGaAIg6oGG1FBsB/HyCy9uyTUs7nOs0vptgmkTJAgGWn7PFMMlZZbVYSDO0HpNO/aLsV2qe9PY5nHa0Lqh9q7iirGdIoe0UyKhMYm7fwKus3ScmhMYscvKqmV5aEY2vTbJILuwAcytBYLqVO8XN1mPJCvoHUAO4cu1CWqy3yScOK4oqjobsa1bewYvYO3O5QhamW6Q+OeDD5ylr7Ld0Zk93cpNyYI6MX6581sVFxy1TvhrzHBvKFU7LhOFGes8nwhSbYOAG6PJTFnbtKAB/+Tq/DSpt/T9VF1vtJ+IDgGjmjhQuuExCrfUpt6RY3i5MAJ/r3Y1XdjjHgq3WMnpOJ7zzRrsrWcfGDwBKoPpBR1Z54QML9qA3KxYBdc7lvVtOwCcEM/wBI/wANE/qd9FQ/L9U4NY3sJ+iVoKY5bYgBgO6VP+EiLu77uWddlSuf5hHAAeKofUe7pOeeLjyRY9JqXsYOk5reLgEO7KNBv8wHgC7kIWdFHgpizHET8ktQaR4cu0m4Ne7sAHNVH0iJ6LAOJnwASn+EKnSs5CWoekPOWKpOIHAfOVI2t7ry53YSPAKmlRRVOhCT3GlQG5k3x2480DbaVw7VofVA/RK8o0xn5uwDx+inJUUi7Yc+1erpUNDOBZtgiIiO9GWC1B7Whsl2aJEG5W0LC17aecYDWi7WZATShSawQ0ADctxZOSLW1j6h1KDnOa5s6hnCJ3qGTiKdNtNzA+JvIF8mcCFZcvXLep3ZitqLWVLPOlZ2/wBjCvVaVkcRFNgxnQjZGA4qm5ezVrWLSWWjItjcwFoaHZ0aLzMQdRJ3akttXok0jQqng5ocPJFlgXgyMLknpfKBalwxNb/RCrRY58Uy1rc45pc24X9G6UT6JuljzEaXkm1Wu97HU3PcWuGab743FD5LsbaIc0EkEzfiiMUppocpNxaZorMfav8A0/tC+e+mz22eqHUhDnyXNGGJkjZh4r6DROm87m/tC+cemtWbTwAHj9FXPWgxh7wvsuVrU8E06T3AXEtM3rZWInFwg5okbDF4Sb0U6D+sOSdUzpOWMKpWayvegymV5SjRH3qXlciK6j2tmY4kx5oKplamP5jOwyf8Vlq0k/XFVGnw++K5LOrSaWv6QUgLi51+oR+4hAVcvXaNMneTHklOYTcPkqXtk3YDDfv7fkiw0oZnLteDGY0RG08zyQj8o1j/ADT2XcoVTaSsFJFjopc5zuk97uJK8KI2c0SKSsZTCVjoHFPcO5TpsvvTOzZOqVOiwxtwHeU0s/o4fjfG5t/iUWJ0ZZlAgwQrWUFtKWRaLby3OP5ieWCNp0GN6LWjgAEULUYelYXHBjjwaUQzJVX/AKndv1W0XoRQtRkW5Kq/9Z8Pmvf8fVH8t3dPJa+F5FBqZj3UCMWkcQRzUMzd33LbMUKtkpu6TGnsg94RQajINbv7vqimNHFNrTkFh6BLTsN4+YSi2UatAy5mjfeDyOHYYRQWXA9iyuWif4h+ODb/ANLVoKVcOONxwwI7COCQ5VvrPO8R/a1ZnwbhyauxVwBJOoADhcT3o5lsadaxtPKjGiJMgnUdp+SvZlNhweO27mp6mhtGv9eFz1izAtp1FX07e5PrBaTRBykKiS08oK5luC0pi0jXPXc9ANtIOtWCqFpSM0FZ6sY5B+sCspvWlITQ2sFbNMHA+BXz30jOdaH9bzW3ovWHtwzqhO0ozS7KQ8Ud2xn6MCBUH5m/7JvSOk7sSf0fdpOHA+P1TWgdJ/EKuHuk8neGuYc0Lysa4EXGV1XJHzMNK6aYU4U4XnWdpXmwMLzywJ7cO9dp0grbT0nbiQOAuCinYEXABRawuMAEk6hee5daFuMlWRjGNLWgEgEnWe1Nbibozti9G3uvecwbMXd2pPLLkilTwbJ2uvPyCZqJC0kYcmyuF2F0KS0ZIQuhqkvIAjmrsKS8EARzV7NU10IA41qsAXAphIDkKL2yIIlWLjkgM5lTIsS6iBrzmRc4X4b78Fhba/2rvPGbpX1hywPptQa2uCAAXMBdvOcRPcAlPg3B7iylkurUlzACM510icTfBVFqyVXaJNN3YJ8WphYXkerIMTUAPDFaayVCQCShY0xubPn9IubgSPsfJGUsoOFxAO/A/JbDLVkpvpy5gJ2xDu8XrC1GwTG1YlCjUZahxSyizWY43bdeGooltUHAykLCvPYMeV2z/wBR3LFGjQ+tIV1K1Hasm60PaRDjiNZOJqbUTZLY8kS78Ooa6WcfG9FNCs1bbXvVtK1FJ6DiQOA5IphSTYNDcW9zbx3LJOtzi4nNGO/unWn8rNfE/i7mU3JsIocejdtDquaQQS0nVqITyxWljn1A0g5pAMGYOwrF5NYDWIIkZh5hM8mH1dWGaIOIGBXRiltRLJHezWMkLi5QeYXlfURo/9k="
+          alt="" class="img-fluid w-75">
+      </div>
+    </div>
+  </div>
+  <hr class="border-dark">
+  <div class="container nn">
+    <div class="row row-cols-1 row-cols-md-4 g-3">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="https://tileshop.scene7.com/is/image/TileShop/681198?$ExtraLarge$" class="card-img-top" alt="">
+            <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+            <P class="card-text aa">Gloss Black Amalfi Mosaic Wall Tile<br>
+              <b><u class="text-abc">
+                  $47.49/sq. ft.</b></u>
+            </P>
+            <span class="text-warning mt-3 tx">
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+            </span>
+            <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="https://tileshop.scene7.com/is/image/TileShop/683415?$ExtraLarge$" class="card-img-top" alt="">
+            <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+            <P class="card-text aa">Grey Glazed Macula Polished Wall Tile<br>
+              <b><u class="text-abc">
+                  $12.49/sq. ft.</b></u>
+            </P>
+            <span class="text-warning mt-3 tx">
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+            </span>
+            <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="https://tileshop.scene7.com/is/image/TileShop/682678?$ExtraLarge$" class="card-img-top" alt="">
+            <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+            <P class="card-text aa">Marvel Wood-Look Ceramic Wall Tile<br>
+              <b><u class="text-abc">
+                  $19.49/sq. ft.</b></u>
+            </P>
+            <span class="text-warning mt-3 tx">
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+            </span>
+            <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="https://tileshop.scene7.com/is/image/TileShop/681200?$ExtraLarge$" class="card-img-top" alt="">
+            <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+            <P class="card-text aa">Gloss Light Brown Amalfi Mosaic Wall Tile<br>
+              <b><u class="text-abc">
+                  $27.49/sq. ft.</b></u>
+            </P>
+            <span class="text-warning mt-3 tx">
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+            </span>
+            <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="https://tileshop.scene7.com/is/image/TileShop/660715?$ExtraLarge$" class="card-img-top" alt="">
+            <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+            <P class="card-text aa">Nordic Light Wood Look Wall Tile<br>
+              <b><u class="text-abc">
+                  $32.49/sq. ft.</b></u>
+            </P>
+            <span class="text-warning mt-3 tx">
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+            </span>
+            <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="https://tileshop.scene7.com/is/image/TileShop/680740?$ExtraLarge$" class="card-img-top" alt="">
+            <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+            <P class="card-text aa">Verona Ledger Silver Ceramic Wall Tile<br>
+              <b><u class="text-abc">
+                  $09.49/sq. ft.</b></u>
+            </P>
+            <span class="text-warning mt-3 tx">
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+            </span>
+            <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="https://tileshop.scene7.com/is/image/TileShop/680773?$ExtraLarge$" class="card-img-top" alt="">
+            <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+            <P class="card-text aa">Sligo Mocca Wood-Look Wall Tile<br>
+              <b><u class="text-abc">
+                  $29.49/sq. ft.</b></u>
+            </P>
+            <span class="text-warning mt-3 tx">
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+            </span>
+            <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <img src="https://tileshop.scene7.com/is/image/TileShop/680638?$ExtraLarge$" class="card-img-top" alt="">
+            <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+            <P class="card-text aa">Britannia Mayfair Star Hex Wall Tile<br>
+              <b><u class="text-abc">
+                  $16.49/sq. ft.</b></u>
+            </P>
+            <span class="text-warning mt-3 tx">
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-solid fa-star aa"></i>
+              <i class="fa-regular fa-star aa"></i>
+            </span>
+            <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-light">
+  <footer class="bg text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 justify-content-center align-items-center ">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/622120ca5bf5c6740abc47e2/d2d38fa5-9c0c-4afa-8584-9f9ab76a2f36/logo.png"
+            class="img-fluid w" alt=""></a>
+          <p class="text-ab text-b text-decoration-none my-3">CERA'S offers a wide range of sizes, surface
+            finishes,
+            colors, and designs in Porcelain and Ceramic tiles, that conform to high quality standards of
+            durability and aesthetic values.</p>
+
+        </div>
+        <div class="col-12 col-md-4 justify-content-center align-items-center ">
+          <h5 class=" fw-bold text-abc txt1">LINKS</h5>
+
+          <ul class=" list-unstyled">
+            <li>
+              <a href="index.html" class="text-decoration-none text-ab text-b active">Home</a>
+            </li>
+            <li>
+              <a href="wall.html" class="text-decoration-none text-ab text-b">Catagories</a>
+            </li>
+            <li>
+              <a href="crmc.html" class="text-decoration-none text-ab text-b">E-Catalogue</a>
+            </li>
+
+            <li>
+              <a href="cal.html" class=" text-decoration-none text-ab text-b">Expert Corner</a>
+            </li>
+            <li>
+              <a href="contact.html" class="text-decoration-none text-ab text-b">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4  justify-content-center align-items-center">
+          <h5 class=" fw-bold text-abc txt1">PRODUCTS</h5>
+
+          <ul class="list-unstyled ">
+            <li>
+              <a href="wall.html" class="text-decoration-none text-ab text-b ">Wall Tiles</a>
+            </li>
+            <li>
+              <a href="flr.html" class="text-decoration-none text-ab text-b">Floor Tiles</a>
+            </li>
+            <li>
+              <a href="spcl.html" class="text-decoration-none text-ab text-b">Special Tiles</a>
+            </li>
+            <li>
+              <a href="glzd.html" class="text-decoration-none text-ab text-b">Glazed Virtified Tiles</a>
+            </li>
+            <li>
+              <a href="crmc.html" class="text-decoration-none text-ab text-b">Ceremics Tiles</a>
+            </li>
+            <li>
+              <a href="plsh.html" class="text-decoration-none text-ab text-b">Polished Virtified Tiles</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4  justify-content-center align-items-center">
+          <h5 class=" fw-bold text-abc txt1">EXPERT CORNER</h5>
+
+          <ul class="list-unstyled ">
+            <li>
+              <a href="cal.html" class="text-ab text-b text-decoration-none my-3">Tile Calculator</a>
+            </li>
+            <li>
+              <a href="diff.html" class="text-ab text-b text-decoration-none my-3">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4  justify-content-center align-items-center ">
+          <h5 class=" fw-bold text-abc txt1">GET IN TOUCH</h5>
+
+          <ul class="list-unstyled text-ab ">
+            <li class="text-b text-decoration-none">
+              <i class="fas fa-home mr-3 "></i> Pakistan.
+            </li>
+            <li class="text-b text-decoration-none">
+              <i class="fas fa-envelope mr-3 "></i> @gmail.com
+            </li>
+            <li class="text-b text-decoration-none">
+              <i class="fas fa-phone mr-3 "></i> +9265578879
+            </li>
+            <li class="text-b text-decoration-none">
+              <i class="fas fa-print mr-3"></i> +0176534577
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 justify-content-center align-items-center">
+
+          <div class="d-flex">
+            <ul class="list-unstyled d-flex w-100 m-0 my-5">
+              <li class="px-2">
+                <a href="#">
+                  <h4><i class="text-abc text-b fab fa-facebook"></i></h4>
+                </a>
+              </li>
+              <li class="px-2">
+                <a href="#">
+                  <h4><i class="text-abc text-b fab fa-twitter"></i></h4>
+                </a>
+              </li>
+              <li class="px-2">
+                <a href="#">
+                  <h4><i class="text-abc text-b fab fa-instagram"></i></h4>
+                </a>
+              </li>
+              <li class="px-2">
+                <a href="#">
+                  <h4><i class="text-abc text-b fab  fa-linkedin-in"></i></h4>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script>
+    $(".btn").click(function () {
+      $(".nn").slideDown("slow");
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cerashome</title>
+    <link rel="icon"
+        href="https://images.squarespace-cdn.com/content/v1/622120ca5bf5c6740abc47e2/d2d38fa5-9c0c-4afa-8584-9f9ab76a2f36/logo.png">
+    <style>
+        .aa {
+            color: rgb(243, 143, 76);
+        }
+
+        .text {
+            color: rgb(102, 30, 30);
+        }
+
+        .text-a:hover {
+            text-decoration: underline;
+            color: peachpuff;
+        }
+
+        .aa:hover {
+            color: peachpuff;
+        }
+
+        .cl {
+            color: rgb(102, 30, 30);
+            background-color: peachpuff;
+        }
+
+        .tx {
+            color: rgb(243, 143, 76);
+        }
+
+        .tx:hover {
+            color: rgb(102, 30, 30);
+        }
+
+        .text-abc {
+            color: rgb(102, 30, 30);
+
+        }
+
+        .txt1:hover {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .border-ab {
+            border-color: peachpuff;
+            border-radius: 8px;
+            background-color: rgb(102, 30, 30);
+            color: peachpuff;
+            font-weight: bold;
+            border-width: 2px;
+        }
+
+        .btn-1:hover {
+            border-color: rgb(102, 30, 30);
+            background-color: peachpuff;
+            color: rgb(102, 30, 30);
+            font-weight: bold;
+            border-width: 2px;
+
+        }
+
+        .nn {
+            display: none;
+        }
+
+        .tc {
+            color: rgb(102, 30, 30);
+        }
+
+        .mr {
+            margin-right: 400px;
+        }
+
+        .bg {
+            background-color: peachpuff;
+        }
+
+        .text-ab {
+            color: rgb(102, 30, 30);
+
+            margin-right: 50px;
+        }
+
+        .text-b:hover {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        .ab:hover {
+            color: rgb(102, 30, 30);
+        }
+
+        /* FOOTER MAIN HEADING */
+        .text-abc {
+            color: rgb(102, 30, 30);
+
+        }
+
+        .txt1:hover {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .hv:hover {
+            color: white;
+        }
+
+        .hvr:hover {
+            color: peachpuff;
+        }
+
+        .clr {
+            color: rgb(102, 30, 30);
+        }
+
+        .fs {
+            font-size: larger;
+        }
+
+
+
+        /* BUTTON */
+        .text-ba {
+            color: peachpuff;
+        }
+
+        .border-ab {
+            border-color: peachpuff;
+            border-radius: 8px;
+            background-color: rgb(102, 30, 30);
+            color: peachpuff;
+            font-weight: bold;
+            border-width: 2px;
+        }
+
+        .btn-1:hover {
+            border-color: rgb(102, 30, 30);
+            background-color: peachpuff;
+            color: rgb(102, 30, 30);
+            font-weight: bold;
+            border-width: 2px;
+
+        }
+
+        .nc {
+            background-color: white;
+        }
+
+        .ml {
+            margin-left: 200px;
+        }
+
+        .w {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a href="index.html">
+                <img src="https://images.squarespace-cdn.com/content/v1/622120ca5bf5c6740abc47e2/d2d38fa5-9c0c-4afa-8584-9f9ab76a2f36/logo.png"
+                    class="img-fluid w" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcollapse">
+                <ul class="navbar-nav mx-md-auto ">
+                    <li class="nav-item ms-4">
+                        <a href="index.html" class="nav-link fw-bold text-a text">HOME</a>
+                    </li>
+
+                    <li class="nav-item dropdown ms-4">
+                        <a href="#" class="nav-link dropdown-toggle fw-bold text-a text"
+                            data-bs-toggle="dropdown">E-CATALOGUE</a>
+                        <ul class="dropdown-menu">
+
+
+                            <li><a href="glzd.html" class="dropdown-item fw-bold aa">GLAZED VIRTIFIED TILES</a></li>
+                            <li><a href="crmc.html" class="dropdown-item fw-bold aa">CEREMICS TILES</a></li>
+                            <li><a href="plsh.html" class="dropdown-item fw-bold aa">POLISED VIRTIFIED TILES</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ms-4">
+                        <a href="#" class="nav-link dropdown-toggle fw-bold text-a text" data-bs-toggle="dropdown">
+                            CATEGORIES</a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="wall.html" class="dropdown-item fw-bold aa">WALL TILES</a>
+                            </li>
+                            <li><a href="flr.html" class="dropdown-item fw-bold aa">FLOOR TILES </a>
+                            </li>
+                            <li><a href="spcl.html" class="dropdown-item fw-bold aa">SPECIAL TILES</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ms-4">
+                        <a href="#" class="nav-link dropdown-toggle fw-bold text-a text"
+                            data-bs-toggle="dropdown">EXPERT
+                            CORNER</a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="cal.html" class="dropdown-item fw-bold aa">TILE CALCULATOR</a></li>
+                            <li><a href="diff.html" class="dropdown-item fw-bold aa">BLOG</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-4">
+                        <a href="contact.html" class="nav-link fw-bold text-a text">CONTACT US</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-4">
+                    <a href="diff.html" class="active ms-4 ms-md-0 text text-a">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="fw-bold cl">LIVING ROOM FLOOR TILES</h1>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center text-align-center">
+                <div class="mt-2">
+                    <p class="fw-bold tx">
+                        Enhance the beauty of your home's entrance and your comfort space with CERA'S HOME exclusive
+                        collection of ceramic and vitrified living room floor tiles. These tiles will redefine the
+                        aesthetics of your space, making it even more beautiful. Our designer living room floor tiles
+                        are available in a wide variety of colors, textures, and sizes. These tiles are built using
+                        cutting-edge technology, which enhances the overall look and gives your space a cozier feel.
+                        Porcelain material is versatile, decorative and less
+                        expensive than natural stone. The tough surfaces are impervious to spills and won't trap
+                        bacteria and dust. Wood-look ceramic tiles are a popular style because they can be printed to
+                        look like many different species of hardwood flooring. Let
+                        your imagination become a reality!
+                    </p>
+                    <button class="btn btn-sm btn-ab btn-1 border-ab">View products</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-3">
+                <img src="https://images.livspace-cdn.com/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2023-1672723560-eFGVH/tile-design-1673335549-G864x/d-intd-jfm2023-1339-1673339859-LuchV/liv-002effectsresult-1673344589-9q0Qy.jpg"
+                    alt="" class="img-fluid w-75">
+            </div>
+        </div>
+    </div>
+    <hr class="border-dark">
+    <div class="container nn">
+        <div class="row row-cols-1 row-cols-md-4 g-3">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://tileshop.scene7.com/is/image/TileShop/680538?$ExtraLarge$"
+                            class="card-img-top" alt="">
+                        <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+                        <P class="card-text aa">Ceramic Star Oxide Ceramic Floor Tile<br>
+                            <b><u class="text-abc">
+                                    $47.49/sq. ft.</b></u>
+                        </P>
+                        <span class="text-warning mt-3 tx">
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                        </span>
+                        <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://tileshop.scene7.com/is/image/TileShop/681539?$ExtraLarge$"
+                            class="card-img-top" alt="">
+                        <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+                        <P class="card-text aa">Macula Artisan Conte Gris Floor Tile<br>
+                            <b><u class="text-abc">
+                                    $12.49/sq. ft.</b></u>
+                        </P>
+                        <span class="text-warning mt-3 tx">
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                        </span>
+                        <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://tileshop.scene7.com/is/image/TileShop/667750?$ExtraLarge$"
+                            class="card-img-top" alt="">
+                        <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+                        <P class="card-text aa">Basketweave Matte White Floor Tile <br>
+                            <b><u class="text-abc">
+                                    $19.49/sq. ft.</b></u>
+                        </P>
+                        <span class="text-warning mt-3 tx">
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                        </span>
+                        <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://tileshop.scene7.com/is/image/TileShop/616048?$ExtraLarge$"
+                            class="card-img-top" alt="">
+                        <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+                        <P class="card-text aa">Moonstone Charlotte Marble Floor Tile<br>
+                            <b><u class="text-abc">
+                                    $27.49/sq. ft.</b></u>
+                        </P>
+                        <span class="text-warning mt-3 tx">
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                        </span>
+                        <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://tileshop.scene7.com/is/image/TileShop/681244?$ExtraLarge$"
+                            class="card-img-top" alt="">
+                        <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+                        <P class="card-text aa">Canvas Matte Picket Gloss Moss Floor Tile<br>
+                            <b><u class="text-abc">
+                                    $32.49/sq. ft.</b></u>
+                        </P>
+                        <span class="text-warning mt-3 tx">
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                        </span>
+                        <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://tileshop.scene7.com/is/image/TileShop/655502?$ExtraLarge$"
+                            class="card-img-top" alt="">
+                        <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+                        <P class="card-text aa">Adoni Black Slate Large Versailles Floor Tile<br>
+                            <b><u class="text-abc">
+                                    $09.49/sq. ft.</b></u>
+                        </P>
+                        <span class="text-warning mt-3 tx">
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                        </span>
+                        <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://tileshop.scene7.com/is/image/TileShop/681212?$ExtraLarge$"
+                            class="card-img-top" alt="">
+                        <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+                        <P class="card-text aa">Herringbone Gloss Denim Floor Tile <br>
+                            <b><u class="text-abc">
+                                    $29.49/sq. ft.</b></u>
+                        </P>
+                        <span class="text-warning mt-3 tx">
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                        </span>
+                        <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="https://tileshop.scene7.com/is/image/TileShop/681489?$ExtraLarge$"
+                            class="card-img-top" alt="">
+                        <h4 class="card-title text-abc fw-bold">LIVING FLOOR TILES</h4>
+                        <P class="card-text aa">Gray Lafaenza Oro Agata Floor Tile<br>
+                            <b><u class="text-abc">
+                                    $16.49/sq. ft.</b></u>
+                        </P>
+                        <span class="text-warning mt-3 tx">
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-solid fa-star aa"></i>
+                            <i class="fa-regular fa-star aa"></i>
+                        </span>
+                        <a href="" class="btn btn-sm float-end btn-ab btn-1 border-ab">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="border-light">
+    <footer class="bg text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 justify-content-center align-items-center ">
+                    <img src="https://images.squarespace-cdn.com/content/v1/622120ca5bf5c6740abc47e2/d2d38fa5-9c0c-4afa-8584-9f9ab76a2f36/logo.png"
+                        class="img-fluid w" alt=""></a>
+                    <p class="text-ab text-b text-decoration-none my-3">CERA'S offers a wide range of sizes, surface
+                        finishes,
+                        colors, and designs in Porcelain and Ceramic tiles, that conform to high quality standards of
+                        durability and aesthetic values.</p>
+
+                </div>
+                <div class="col-12 col-md-4 justify-content-center align-items-center ">
+                    <h5 class=" fw-bold text-abc txt1">LINKS</h5>
+
+                    <ul class=" list-unstyled">
+                        <li>
+                            <a href="index.html" class="text-decoration-none text-ab text-b active">Home</a>
+                        </li>
+                        <li>
+                            <a href="wall.html" class="text-decoration-none text-ab text-b">Catagories</a>
+                        </li>
+                        <li>
+                            <a href="crmc.html" class="text-decoration-none text-ab text-b">E-Catalogue</a>
+                        </li>
+
+                        <li>
+                            <a href="cal.html" class=" text-decoration-none text-ab text-b">Expert Corner</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="text-decoration-none text-ab text-b">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4  justify-content-center align-items-center">
+                    <h5 class=" fw-bold text-abc txt1">PRODUCTS</h5>
+
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="wall.html" class="text-decoration-none text-ab text-b ">Wall Tiles</a>
+                        </li>
+                        <li>
+                            <a href="flr.html" class="text-decoration-none text-ab text-b">Floor Tiles</a>
+                        </li>
+                        <li>
+                            <a href="spcl.html" class="text-decoration-none text-ab text-b">Special Tiles</a>
+                        </li>
+                        <li>
+                            <a href="glzd.html" class="text-decoration-none text-ab text-b">Glazed Virtified Tiles</a>
+                        </li>
+                        <li>
+                            <a href="crmc.html" class="text-decoration-none text-ab text-b">Ceremics Tiles</a>
+                        </li>
+                        <li>
+                            <a href="plsh.html" class="text-decoration-none text-ab text-b">Polished Virtified Tiles</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4  justify-content-center align-items-center">
+                    <h5 class=" fw-bold text-abc txt1">EXPERT CORNER</h5>
+
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="cal.html" class="text-ab text-b text-decoration-none my-3">Tile Calculator</a>
+                        </li>
+                        <li>
+                            <a href="diff.html" class="text-ab text-b text-decoration-none my-3">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4  justify-content-center align-items-center ">
+                    <h5 class=" fw-bold text-abc txt1">GET IN TOUCH</h5>
+
+                    <ul class="list-unstyled text-ab ">
+                        <li class="text-b text-decoration-none">
+                            <i class="fas fa-home mr-3 "></i> Pakistan.
+                        </li>
+                        <li class="text-b text-decoration-none">
+                            <i class="fas fa-envelope mr-3 "></i> @gmail.com
+                        </li>
+                        <li class="text-b text-decoration-none">
+                            <i class="fas fa-phone mr-3 "></i> +9265578879
+                        </li>
+                        <li class="text-b text-decoration-none">
+                            <i class="fas fa-print mr-3"></i> +0176534577
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 justify-content-center align-items-center">
+
+                    <div class="d-flex">
+                        <ul class="list-unstyled d-flex w-100 m-0 my-5">
+                            <li class="px-2">
+                                <a href="#">
+                                    <h4><i class="text-abc text-b fab fa-facebook"></i></h4>
+                                </a>
+                            </li>
+                            <li class="px-2">
+                                <a href="#">
+                                    <h4><i class="text-abc text-b fab fa-twitter"></i></h4>
+                                </a>
+                            </li>
+                            <li class="px-2">
+                                <a href="#">
+                                    <h4><i class="text-abc text-b fab fa-instagram"></i></h4>
+                                </a>
+                            </li>
+                            <li class="px-2">
+                                <a href="#">
+                                    <h4><i class="text-abc text-b fab  fa-linkedin-in"></i></h4>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script>
+        $(".btn").click(function () {
+            $(".nn").slideDown("slow");
+        })
+    </script>
+</body>
+
+</html>
